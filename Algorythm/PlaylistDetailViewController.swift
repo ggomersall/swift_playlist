@@ -15,6 +15,7 @@ class PlaylistDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         buttonPressLabel.text = segueLabelText
     }
 

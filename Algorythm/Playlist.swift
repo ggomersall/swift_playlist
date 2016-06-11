@@ -18,3 +18,4 @@ struct Playlist {
     var backgroundColor: UIColor = UIColor.clearColor()
     
 }
+

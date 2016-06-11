@@ -17,20 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jBw-Rx-Aae">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="KWO-IR-yA1"/>
+                                    <constraint firstAttribute="width" constant="200" id="xFE-20-1iD"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEs-Qh-6iq">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="4ts-xJ-yNN" kind="push" identifier="showPlaylistDetail" id="t4p-JB-SKc"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.18965546864587124" green="0.62394395839362549" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="SEs-Qh-6iq" firstAttribute="top" secondItem="jBw-Rx-Aae" secondAttribute="bottom" constant="8" id="0kN-lw-j59"/>
                             <constraint firstItem="SEs-Qh-6iq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMZ-nC-RdS"/>
-                            <constraint firstItem="SEs-Qh-6iq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l3w-Fg-6dn"/>
+                            <constraint firstItem="jBw-Rx-Aae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QQ8-BU-eEI"/>
+                            <constraint firstItem="jBw-Rx-Aae" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vfa-v8-LJa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="VsV-lC-j0z"/>
