@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D71933F31D0C5DC30079B67D /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71933F21D0C5DC30079B67D /* MusicLibrary.swift */; };
 		D76B68FB1D0C500B006F6D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B68FA1D0C500B006F6D1B /* AppDelegate.swift */; };
 		D76B68FD1D0C500B006F6D1B /* PlaylistMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B68FC1D0C500B006F6D1B /* PlaylistMasterViewController.swift */; };
 		D76B69001D0C500B006F6D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76B68FE1D0C500B006F6D1B /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D71933F21D0C5DC30079B67D /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
 		D76B68F71D0C500B006F6D1B /* Algorythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76B68FA1D0C500B006F6D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D76B68FC1D0C500B006F6D1B /* PlaylistMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMasterViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				D76B68FC1D0C500B006F6D1B /* PlaylistMasterViewController.swift */,
 				D76B69281D0C5428006F6D1B /* PlaylistDetailViewController.swift */,
 				D76B68FE1D0C500B006F6D1B /* Main.storyboard */,
+				D71933F21D0C5DC30079B67D /* MusicLibrary.swift */,
 				D76B69011D0C500B006F6D1B /* Assets.xcassets */,
 				D76B69031D0C500B006F6D1B /* LaunchScreen.storyboard */,
 				D76B69061D0C500B006F6D1B /* Info.plist */,
@@ -262,6 +265,7 @@
 				D76B69291D0C5428006F6D1B /* PlaylistDetailViewController.swift in Sources */,
 				D76B68FD1D0C500B006F6D1B /* PlaylistMasterViewController.swift in Sources */,
 				D76B68FB1D0C500B006F6D1B /* AppDelegate.swift in Sources */,
+				D71933F31D0C5DC30079B67D /* MusicLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +490,7 @@
 				D76B69211D0C500C006F6D1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D76B69221D0C500C006F6D1B /* Build configuration list for PBXNativeTarget "AlgorythmTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				D76B69241D0C500C006F6D1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D76B69251D0C500C006F6D1B /* Build configuration list for PBXNativeTarget "AlgorythmUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				D76B69271D0C500C006F6D1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
