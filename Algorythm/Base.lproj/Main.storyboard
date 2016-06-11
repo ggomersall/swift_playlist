@@ -23,7 +23,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4ts-xJ-yNN" kind="push" id="t4p-JB-SKc"/>
+                                    <segue destination="4ts-xJ-yNN" kind="push" identifier="showPlaylistDetail" id="t4p-JB-SKc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,9 +53,24 @@
                     <view key="view" contentMode="scaleToFill" id="1zF-IN-goS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't presed the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBo-kN-eHz">
+                                <rect key="frame" x="45" y="273" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.2622749903499928" green="1" blue="0.30829112428435024" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qBo-kN-eHz" firstAttribute="centerY" secondItem="1zF-IN-goS" secondAttribute="centerY" id="Uak-de-QJP"/>
+                            <constraint firstItem="qBo-kN-eHz" firstAttribute="centerX" secondItem="1zF-IN-goS" secondAttribute="centerX" id="crU-mz-dkm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="yGL-HP-xIo"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="qBo-kN-eHz" id="2e7-gZ-BV2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Tn-hB-ugm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
