@@ -12,11 +12,15 @@ class PlaylistMasterViewController: UIViewController {
 
     // Here we setup up the button
     @IBOutlet weak var aButton: UIButton!
+    @IBOutlet weak var playlistImageView0: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         aButton.setTitle("Press Me!", forState: .Normal)
+        
+        let playlist = Playlist(index: 0)
+        playlistImageView0.image = playlist.icon
         
     }
 
