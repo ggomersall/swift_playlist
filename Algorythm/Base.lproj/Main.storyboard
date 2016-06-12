@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Playlists-->
@@ -33,6 +34,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="SEs-Qh-6iq" firstAttribute="top" secondItem="jBw-Rx-Aae" secondAttribute="bottom" constant="8" id="0kN-lw-j59"/>
                             <constraint firstItem="SEs-Qh-6iq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMZ-nC-RdS"/>
@@ -62,23 +64,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't presed the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBo-kN-eHz">
-                                <rect key="frame" x="45" y="273" width="230" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="48I-qh-QwD">
+                                <rect key="frame" x="0.0" y="64" width="320" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="48I-qh-QwD" secondAttribute="height" multiplier="32:29" id="kvH-qb-EcL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.2622749903499928" green="1" blue="0.30829112428435024" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="qBo-kN-eHz" firstAttribute="centerY" secondItem="1zF-IN-goS" secondAttribute="centerY" id="Uak-de-QJP"/>
-                            <constraint firstItem="qBo-kN-eHz" firstAttribute="centerX" secondItem="1zF-IN-goS" secondAttribute="centerX" id="crU-mz-dkm"/>
+                            <constraint firstAttribute="trailing" secondItem="48I-qh-QwD" secondAttribute="trailing" id="PoT-1c-0uc"/>
+                            <constraint firstItem="48I-qh-QwD" firstAttribute="leading" secondItem="1zF-IN-goS" secondAttribute="leading" id="SVl-cO-QdJ"/>
+                            <constraint firstItem="48I-qh-QwD" firstAttribute="top" secondItem="Xhz-4l-UOI" secondAttribute="bottom" id="gug-nb-qT1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="yGL-HP-xIo"/>
-                    <connections>
-                        <outlet property="buttonPressLabel" destination="qBo-kN-eHz" id="2e7-gZ-BV2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Tn-hB-ugm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,9 +89,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JRk-ca-mMS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rL1-40-FX5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rL1-40-FX5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

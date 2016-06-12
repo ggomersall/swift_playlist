@@ -10,7 +10,6 @@ import UIKit
 
 class PlaylistDetailViewController: UIViewController {
 
-    @IBOutlet weak var buttonPressLabel: UILabel!
     // the optional i.e ?, below makes it nil at first
     var playlist: Playlist?
     
