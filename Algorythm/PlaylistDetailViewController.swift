@@ -11,17 +11,22 @@ import UIKit
 class PlaylistDetailViewController: UIViewController {
 
     @IBOutlet weak var buttonPressLabel: UILabel!
-    var segueLabelText: String = ""
+    // the optional i.e ?, below makes it nil at first
+    var playlist: Playlist?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buttonPressLabel.text = segueLabelText
+        if playlist != nil {
+            
+            buttonPressLabel.text = playlist!.title
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
         
     }
     
