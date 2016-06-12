@@ -9,6 +9,7 @@
 import Foundation
 
 
+// this is the hard-coded dictionary to use for the data accessing
 struct MusicLibrary {
     let library = [
         [
