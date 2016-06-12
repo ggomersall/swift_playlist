@@ -26,25 +26,15 @@
                                     <constraint firstAttribute="width" constant="200" id="xFE-20-1iD"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEs-Qh-6iq">
-                                <rect key="frame" x="137" y="392" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="4ts-xJ-yNN" kind="push" identifier="showPlaylistDetail" id="t4p-JB-SKc"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="SEs-Qh-6iq" firstAttribute="top" secondItem="jBw-Rx-Aae" secondAttribute="bottom" constant="8" id="0kN-lw-j59"/>
-                            <constraint firstItem="SEs-Qh-6iq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMZ-nC-RdS"/>
                             <constraint firstItem="jBw-Rx-Aae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QQ8-BU-eEI"/>
                             <constraint firstItem="jBw-Rx-Aae" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vfa-v8-LJa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="VsV-lC-j0z"/>
                     <connections>
-                        <outlet property="aButton" destination="SEs-Qh-6iq" id="qLU-dd-fxT"/>
                         <outlet property="playlistImageView0" destination="jBw-Rx-Aae" id="rVz-R6-mr0"/>
                     </connections>
                 </viewController>
@@ -64,39 +54,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="48I-qh-QwD">
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="48I-qh-QwD">
                                 <rect key="frame" x="0.0" y="64" width="320" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="48I-qh-QwD" secondAttribute="height" multiplier="32:29" id="kvH-qb-EcL"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccF-g3-Ajl">
-                                <rect key="frame" x="0.0" y="234" width="320" height="120"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xj-6V-oAN">
-                                        <rect key="frame" x="20" y="10" width="114" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xv9-cv-bdK">
-                                        <rect key="frame" x="20" y="39" width="280" height="43"/>
-                                        <string key="text">This is a collection of my favorite songs to listen to when working out. it's got everything from fsat cardio to power workout tunes. All the right fuel to get your engine going</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="7Xj-6V-oAN" firstAttribute="leading" secondItem="ccF-g3-Ajl" secondAttribute="leading" constant="20" id="HaV-dY-2sa"/>
-                                    <constraint firstItem="7Xj-6V-oAN" firstAttribute="top" secondItem="ccF-g3-Ajl" secondAttribute="top" constant="10" id="PPs-AM-M8p"/>
-                                    <constraint firstItem="xv9-cv-bdK" firstAttribute="top" secondItem="7Xj-6V-oAN" secondAttribute="bottom" constant="8" id="aH3-d6-lVK"/>
-                                    <constraint firstAttribute="width" secondItem="ccF-g3-Ajl" secondAttribute="height" multiplier="8:3" id="iTd-J9-BMa"/>
-                                    <constraint firstAttribute="trailing" secondItem="xv9-cv-bdK" secondAttribute="trailing" constant="20" id="neZ-AK-X2l"/>
-                                    <constraint firstItem="xv9-cv-bdK" firstAttribute="leading" secondItem="ccF-g3-Ajl" secondAttribute="leading" constant="20" id="uSA-v7-iLC"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH1-J7-3cF">
                                 <rect key="frame" x="20" y="374" width="46" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
@@ -121,6 +84,33 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccF-g3-Ajl">
+                                <rect key="frame" x="0.0" y="264" width="320" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xj-6V-oAN">
+                                        <rect key="frame" x="20" y="10" width="114" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xv9-cv-bdK">
+                                        <rect key="frame" x="20" y="39" width="280" height="43"/>
+                                        <string key="text">This is a collection of my favorite songs to listen to when working out. it's got everything from fsat cardio to power workout tunes. All the right fuel to get your engine going</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7Xj-6V-oAN" firstAttribute="leading" secondItem="ccF-g3-Ajl" secondAttribute="leading" constant="20" id="HaV-dY-2sa"/>
+                                    <constraint firstItem="7Xj-6V-oAN" firstAttribute="top" secondItem="ccF-g3-Ajl" secondAttribute="top" constant="10" id="PPs-AM-M8p"/>
+                                    <constraint firstItem="xv9-cv-bdK" firstAttribute="top" secondItem="7Xj-6V-oAN" secondAttribute="bottom" constant="8" id="aH3-d6-lVK"/>
+                                    <constraint firstAttribute="width" secondItem="ccF-g3-Ajl" secondAttribute="height" multiplier="8:3" constant="80" id="iTd-J9-BMa"/>
+                                    <constraint firstAttribute="trailing" secondItem="xv9-cv-bdK" secondAttribute="trailing" constant="20" id="neZ-AK-X2l"/>
+                                    <constraint firstItem="xv9-cv-bdK" firstAttribute="leading" secondItem="ccF-g3-Ajl" secondAttribute="leading" constant="20" id="uSA-v7-iLC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
